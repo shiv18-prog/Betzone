@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-green: #00e701;
+  --color-dark-obsidian: #080b11;
+  --color-dark-navy: #0e1524;
+  --color-dark-surface: #141d30;
+  --color-dark-border: #1f2d47;
+}
+
+@layer base {
+  body {
+    background-color: #080b11;
+    color: #f1f5f9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom neon glow and glassmorphism helpers */
+.neon-glow {
+  box-shadow: 0 0 25px rgba(0, 231, 1, 0.35);
+}
+
+.neon-glow-sm {
+  box-shadow: 0 0 12px rgba(0, 231, 1, 0.25);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 18px rgba(0, 231, 1, 0.65);
+}
+
+/* Subtle background grid pattern for high-tech sportsbook vibe */
+.sports-grid-bg {
+  background-image: radial-gradient(rgba(0, 231, 1, 0.04) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
